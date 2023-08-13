@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/prpcapplication.cc.o -c /home/decone/prpc/src/prpcapplication.cc",
+  "file": "/home/decone/prpc/src/prpcapplication.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/prpcconfig.cc.o -c /home/decone/prpc/src/prpcconfig.cc",
+  "file": "/home/decone/prpc/src/prpcconfig.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/rpcheader.pb.cc.o -c /home/decone/prpc/src/rpcheader.pb.cc",
+  "file": "/home/decone/prpc/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/rpcprovider.cc.o -c /home/decone/prpc/src/rpcprovider.cc",
+  "file": "/home/decone/prpc/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/prpcchannel.cc.o -c /home/decone/prpc/src/prpcchannel.cc",
+  "file": "/home/decone/prpc/src/prpcchannel.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/decone/prpc/example/callee/friendservice.cc",
+  "file": "/home/decone/prpc/example/callee/friendservice.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/decone/prpc/example/friend.pb.cc",
+  "file": "/home/decone/prpc/example/friend.pb.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/decone/prpc/example/caller/callfriendservice.cc",
+  "file": "/home/decone/prpc/example/caller/callfriendservice.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/decone/prpc/example/friend.pb.cc",
+  "file": "/home/decone/prpc/example/friend.pb.cc"
+}
+]
