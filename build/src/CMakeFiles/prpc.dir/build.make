@@ -177,13 +177,63 @@ src/CMakeFiles/prpc.dir/prpcchannel.cc.o.provides: src/CMakeFiles/prpc.dir/prpcc
 src/CMakeFiles/prpc.dir/prpcchannel.cc.o.provides.build: src/CMakeFiles/prpc.dir/prpcchannel.cc.o
 
 
+src/CMakeFiles/prpc.dir/prpccontroller.cc.o: src/CMakeFiles/prpc.dir/flags.make
+src/CMakeFiles/prpc.dir/prpccontroller.cc.o: ../src/prpccontroller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/prpc.dir/prpccontroller.cc.o"
+	cd /home/decone/prpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/prpc.dir/prpccontroller.cc.o -c /home/decone/prpc/src/prpccontroller.cc
+
+src/CMakeFiles/prpc.dir/prpccontroller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prpc.dir/prpccontroller.cc.i"
+	cd /home/decone/prpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decone/prpc/src/prpccontroller.cc > CMakeFiles/prpc.dir/prpccontroller.cc.i
+
+src/CMakeFiles/prpc.dir/prpccontroller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prpc.dir/prpccontroller.cc.s"
+	cd /home/decone/prpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decone/prpc/src/prpccontroller.cc -o CMakeFiles/prpc.dir/prpccontroller.cc.s
+
+src/CMakeFiles/prpc.dir/prpccontroller.cc.o.requires:
+
+.PHONY : src/CMakeFiles/prpc.dir/prpccontroller.cc.o.requires
+
+src/CMakeFiles/prpc.dir/prpccontroller.cc.o.provides: src/CMakeFiles/prpc.dir/prpccontroller.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/prpccontroller.cc.o.provides.build
+.PHONY : src/CMakeFiles/prpc.dir/prpccontroller.cc.o.provides
+
+src/CMakeFiles/prpc.dir/prpccontroller.cc.o.provides.build: src/CMakeFiles/prpc.dir/prpccontroller.cc.o
+
+
+src/CMakeFiles/prpc.dir/logger.cc.o: src/CMakeFiles/prpc.dir/flags.make
+src/CMakeFiles/prpc.dir/logger.cc.o: ../src/logger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/prpc.dir/logger.cc.o"
+	cd /home/decone/prpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/prpc.dir/logger.cc.o -c /home/decone/prpc/src/logger.cc
+
+src/CMakeFiles/prpc.dir/logger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prpc.dir/logger.cc.i"
+	cd /home/decone/prpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decone/prpc/src/logger.cc > CMakeFiles/prpc.dir/logger.cc.i
+
+src/CMakeFiles/prpc.dir/logger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prpc.dir/logger.cc.s"
+	cd /home/decone/prpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decone/prpc/src/logger.cc -o CMakeFiles/prpc.dir/logger.cc.s
+
+src/CMakeFiles/prpc.dir/logger.cc.o.requires:
+
+.PHONY : src/CMakeFiles/prpc.dir/logger.cc.o.requires
+
+src/CMakeFiles/prpc.dir/logger.cc.o.provides: src/CMakeFiles/prpc.dir/logger.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/logger.cc.o.provides.build
+.PHONY : src/CMakeFiles/prpc.dir/logger.cc.o.provides
+
+src/CMakeFiles/prpc.dir/logger.cc.o.provides.build: src/CMakeFiles/prpc.dir/logger.cc.o
+
+
 # Object files for target prpc
 prpc_OBJECTS = \
 "CMakeFiles/prpc.dir/prpcapplication.cc.o" \
 "CMakeFiles/prpc.dir/prpcconfig.cc.o" \
 "CMakeFiles/prpc.dir/rpcheader.pb.cc.o" \
 "CMakeFiles/prpc.dir/rpcprovider.cc.o" \
-"CMakeFiles/prpc.dir/prpcchannel.cc.o"
+"CMakeFiles/prpc.dir/prpcchannel.cc.o" \
+"CMakeFiles/prpc.dir/prpccontroller.cc.o" \
+"CMakeFiles/prpc.dir/logger.cc.o"
 
 # External object files for target prpc
 prpc_EXTERNAL_OBJECTS =
@@ -193,9 +243,11 @@ prpc_EXTERNAL_OBJECTS =
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/rpcheader.pb.cc.o
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/rpcprovider.cc.o
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/prpcchannel.cc.o
+../lib/libprpc.a: src/CMakeFiles/prpc.dir/prpccontroller.cc.o
+../lib/libprpc.a: src/CMakeFiles/prpc.dir/logger.cc.o
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/build.make
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libprpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libprpc.a"
 	cd /home/decone/prpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/prpc.dir/cmake_clean_target.cmake
 	cd /home/decone/prpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prpc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -209,6 +261,8 @@ src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/prpcconfig.cc.o.requir
 src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/rpcheader.pb.cc.o.requires
 src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/rpcprovider.cc.o.requires
 src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/prpcchannel.cc.o.requires
+src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/prpccontroller.cc.o.requires
+src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/logger.cc.o.requires
 
 .PHONY : src/CMakeFiles/prpc.dir/requires
 

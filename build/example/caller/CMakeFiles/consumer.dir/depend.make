@@ -8,5 +8,6 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../example/friend
 example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../src/include/prpcapplication.h
 example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../src/include/prpcchannel.h
 example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../src/include/prpcconfig.h
+example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../src/include/prpccontroller.h
 example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: ../example/caller/callfriendservice.cc
 

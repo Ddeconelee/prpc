@@ -49,6 +49,10 @@ google/protobuf/port_undef.inc
 ../src/include/prpcapplication.h
 prpcconfig.h
 ../src/include/prpcconfig.h
+prpcchannel.h
+../src/include/prpcchannel.h
+prpccontroller.h
+../src/include/prpccontroller.h
 
 ../src/include/prpcchannel.h
 google/protobuf/service.h
@@ -64,6 +68,12 @@ unordered_map
 string
 -
 
+../src/include/prpccontroller.h
+google/protobuf/service.h
+-
+string
+-
+
 /home/decone/prpc/example/caller/callfriendservice.cc
 iostream
 -
@@ -71,8 +81,6 @@ prpcapplication.h
 /home/decone/prpc/example/caller/prpcapplication.h
 friend.pb.h
 /home/decone/prpc/example/caller/friend.pb.h
-prpcchannel.h
-/home/decone/prpc/example/caller/prpcchannel.h
 
 /home/decone/prpc/example/friend.pb.cc
 friend.pb.h

@@ -6,7 +6,9 @@ example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o: ../example/friend.pb.h
 
 example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../example/friend.pb.h
 example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../src/include/prpcapplication.h
+example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../src/include/prpcchannel.h
 example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../src/include/prpcconfig.h
+example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../src/include/prpccontroller.h
 example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../src/include/rpcprovider.h
 example/callee/CMakeFiles/provider.dir/friendservice.cc.o: ../example/callee/friendservice.cc
 

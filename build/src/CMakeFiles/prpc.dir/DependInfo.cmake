@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/decone/prpc/src/logger.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/logger.cc.o"
   "/home/decone/prpc/src/prpcapplication.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/prpcapplication.cc.o"
   "/home/decone/prpc/src/prpcchannel.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/prpcchannel.cc.o"
   "/home/decone/prpc/src/prpcconfig.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/prpcconfig.cc.o"
+  "/home/decone/prpc/src/prpccontroller.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/prpccontroller.cc.o"
   "/home/decone/prpc/src/rpcheader.pb.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/rpcheader.pb.cc.o"
   "/home/decone/prpc/src/rpcprovider.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/rpcprovider.cc.o"
   )

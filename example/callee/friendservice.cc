@@ -5,6 +5,7 @@
 #include "rpcprovider.h"
 #include <vector>
 
+
 class FriendService : public fixbug::FriendServiceRpc { // rpc服务提供者继承FriendServiceRpc，实现具体的Login功能
 public:
     std::vector<std::string> GetFriendsList(uint32_t user_id) { //本地GetFriendsList具体实现

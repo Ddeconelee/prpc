@@ -9,4 +9,5 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o
  ../src/include/prpcapplication.h
  ../src/include/prpcchannel.h
  ../src/include/prpcconfig.h
+ ../src/include/prpccontroller.h
  /home/decone/prpc/example/caller/callfriendservice.cc

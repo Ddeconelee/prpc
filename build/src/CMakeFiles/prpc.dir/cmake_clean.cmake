@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/prpc.dir/rpcheader.pb.cc.o"
   "CMakeFiles/prpc.dir/rpcprovider.cc.o"
   "CMakeFiles/prpc.dir/prpcchannel.cc.o"
+  "CMakeFiles/prpc.dir/prpccontroller.cc.o"
+  "CMakeFiles/prpc.dir/logger.cc.o"
   "../../lib/libprpc.pdb"
   "../../lib/libprpc.a"
 )

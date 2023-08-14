@@ -25,6 +25,16 @@
   "file": "/home/decone/prpc/src/prpcchannel.cc"
 },
 {
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/prpccontroller.cc.o -c /home/decone/prpc/src/prpccontroller.cc",
+  "file": "/home/decone/prpc/src/prpccontroller.cc"
+},
+{
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/logger.cc.o -c /home/decone/prpc/src/logger.cc",
+  "file": "/home/decone/prpc/src/logger.cc"
+},
+{
   "directory": "/home/decone/prpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/decone/prpc/example/callee/friendservice.cc",
   "file": "/home/decone/prpc/example/callee/friendservice.cc"

@@ -6,9 +6,27 @@
 
 #IncludeRegexTransform: 
 
+../src/include/logger.h
+logqueue.h
+../src/include/logqueue.h
+string
+-
+
+../src/include/logqueue.h
+queue
+-
+thread
+-
+condition_variable
+-
+
 ../src/include/prpcapplication.h
 prpcconfig.h
 ../src/include/prpcconfig.h
+prpcchannel.h
+../src/include/prpcchannel.h
+prpccontroller.h
+../src/include/prpccontroller.h
 
 ../src/include/prpcchannel.h
 google/protobuf/service.h
@@ -20,6 +38,12 @@ google/protobuf/message.h
 
 ../src/include/prpcconfig.h
 unordered_map
+-
+string
+-
+
+../src/include/prpccontroller.h
+google/protobuf/service.h
 -
 string
 -
@@ -82,6 +106,14 @@ google/protobuf/descriptor.h
 unordered_map
 -
 
+/home/decone/prpc/src/logger.cc
+iostream
+-
+logger.h
+/home/decone/prpc/src/logger.h
+time.h
+-
+
 /home/decone/prpc/src/prpcapplication.cc
 prpcapplication.h
 /home/decone/prpc/src/prpcapplication.h
@@ -115,6 +147,8 @@ netinet/in.h
 -
 unistd.h
 -
+prpccontroller.h
+/home/decone/prpc/src/prpccontroller.h
 
 /home/decone/prpc/src/prpcconfig.cc
 prpcconfig.h
@@ -123,6 +157,10 @@ iostream
 -
 string
 -
+
+/home/decone/prpc/src/prpccontroller.cc
+prpccontroller.h
+/home/decone/prpc/src/prpccontroller.h
 
 /home/decone/prpc/src/rpcheader.pb.cc
 rpcheader.pb.h
@@ -155,4 +193,6 @@ prpcapplication.h
 /home/decone/prpc/src/prpcapplication.h
 rpcheader.pb.h
 /home/decone/prpc/src/rpcheader.pb.h
+logger.h
+/home/decone/prpc/src/logger.h
 

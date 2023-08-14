@@ -125,6 +125,33 @@ prpc/fast:
 	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/build
 .PHONY : prpc/fast
 
+logger.o: logger.cc.o
+
+.PHONY : logger.o
+
+# target to build an object file
+logger.cc.o:
+	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/logger.cc.o
+.PHONY : logger.cc.o
+
+logger.i: logger.cc.i
+
+.PHONY : logger.i
+
+# target to preprocess a source file
+logger.cc.i:
+	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/logger.cc.i
+.PHONY : logger.cc.i
+
+logger.s: logger.cc.s
+
+.PHONY : logger.s
+
+# target to generate assembly for a file
+logger.cc.s:
+	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/logger.cc.s
+.PHONY : logger.cc.s
+
 prpcapplication.o: prpcapplication.cc.o
 
 .PHONY : prpcapplication.o
@@ -206,6 +233,33 @@ prpcconfig.cc.s:
 	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/prpcconfig.cc.s
 .PHONY : prpcconfig.cc.s
 
+prpccontroller.o: prpccontroller.cc.o
+
+.PHONY : prpccontroller.o
+
+# target to build an object file
+prpccontroller.cc.o:
+	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/prpccontroller.cc.o
+.PHONY : prpccontroller.cc.o
+
+prpccontroller.i: prpccontroller.cc.i
+
+.PHONY : prpccontroller.i
+
+# target to preprocess a source file
+prpccontroller.cc.i:
+	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/prpccontroller.cc.i
+.PHONY : prpccontroller.cc.i
+
+prpccontroller.s: prpccontroller.cc.s
+
+.PHONY : prpccontroller.s
+
+# target to generate assembly for a file
+prpccontroller.cc.s:
+	cd /home/decone/prpc/build && $(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/prpccontroller.cc.s
+.PHONY : prpccontroller.cc.s
+
 rpcheader.pb.o: rpcheader.pb.cc.o
 
 .PHONY : rpcheader.pb.o
@@ -269,6 +323,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... prpc"
 	@echo "... edit_cache"
+	@echo "... logger.o"
+	@echo "... logger.i"
+	@echo "... logger.s"
 	@echo "... prpcapplication.o"
 	@echo "... prpcapplication.i"
 	@echo "... prpcapplication.s"
@@ -278,6 +335,9 @@ help:
 	@echo "... prpcconfig.o"
 	@echo "... prpcconfig.i"
 	@echo "... prpcconfig.s"
+	@echo "... prpccontroller.o"
+	@echo "... prpccontroller.i"
+	@echo "... prpccontroller.s"
 	@echo "... rpcheader.pb.o"
 	@echo "... rpcheader.pb.i"
 	@echo "... rpcheader.pb.s"

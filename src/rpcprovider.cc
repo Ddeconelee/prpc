@@ -1,6 +1,7 @@
 #include "rpcprovider.h"
 #include "prpcapplication.h"
 #include "rpcheader.pb.h"
+#include "logger.h"
 
 // 框架提供给外部使用的，可以注册任意的具体服务并发布rpc方法
 void RpcProvider::NotifyService(google::protobuf::Service* service) {
@@ -12,6 +13,7 @@ void RpcProvider::NotifyService(google::protobuf::Service* service) {
     // 获取服务对象的名字
     std::string service_name = service_desc_ptr->name();
     std::cout << "service_name:" << service_name << std::endl;
+    LOG_INFO(" service_name: %s", service_name.c_str());
 
     // 获取服务对象的方法数量
     int service_methods_count = service_desc_ptr->method_count();
@@ -22,6 +24,7 @@ void RpcProvider::NotifyService(google::protobuf::Service* service) {
         //保存服务方法键值对
         std::string method_name = method_desc_ptr->name();
         std::cout << "method_name:" << method_name << std::endl;
+        LOG_INFO(" method_name: %s", method_name.c_str());
         service_info.m_method_map.insert({method_name, method_desc_ptr});
     }
     // 保存service指针

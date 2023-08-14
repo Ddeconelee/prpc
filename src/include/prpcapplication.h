@@ -1,5 +1,8 @@
 #pragma once
 #include "prpcconfig.h"
+#include "prpcchannel.h"
+#include "prpccontroller.h"
+
 
 // prpc框架的基础类，单例模式
 class PrpcApplication {

@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../lib/libprpc.a  CMakeFiles/prpc.dir/prpcapplication.cc.o CMakeFiles/prpc.dir/prpcconfig.cc.o CMakeFiles/prpc.dir/rpcheader.pb.cc.o CMakeFiles/prpc.dir/rpcprovider.cc.o CMakeFiles/prpc.dir/prpcchannel.cc.o
+/usr/bin/ar qc ../../lib/libprpc.a  CMakeFiles/prpc.dir/prpcapplication.cc.o CMakeFiles/prpc.dir/prpcconfig.cc.o CMakeFiles/prpc.dir/rpcheader.pb.cc.o CMakeFiles/prpc.dir/rpcprovider.cc.o CMakeFiles/prpc.dir/prpcchannel.cc.o CMakeFiles/prpc.dir/prpccontroller.cc.o CMakeFiles/prpc.dir/logger.cc.o
 /usr/bin/ranlib ../../lib/libprpc.a
