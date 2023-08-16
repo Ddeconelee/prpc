@@ -9,7 +9,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include "prpccontroller.h"
-
+#include "zookeeperutil.h"
 
 /*
 约定的发送接收数据格式：
@@ -81,8 +81,28 @@ void PrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
 
     // 获取ip和port
     std::vector<std::string> str = {"rpcserverip", "rpcserverport", "zookeeperip", "zookeeperport"};
-    std::string ip = PrpcApplication::GetInstance().GetConfig().Load(str[0]); // 实例化对象并访问静态成员变量m_config
-    uint16_t port = atoi(PrpcApplication::GetInstance().GetConfig().Load(str[1]).c_str());
+    // std::string ip = PrpcApplication::GetInstance().GetConfig().Load(str[0]); // 实例化对象并访问静态成员变量m_config
+    // uint16_t port = atoi(PrpcApplication::GetInstance().GetConfig().Load(str[1]).c_str());
+
+    //rpc查询zk上具体服务的znode节点的值
+    ZkClient zk_cli;
+    zk_cli.Start();
+    //UserServiceRpc/Login
+    std::string method_path = "/" + service_name + "/" + method_name;
+    // 127.0.0.1:8000
+    std::string host_data = zk_cli.GetData(method_path.c_str());
+    if(host_data == "") {
+        controller->SetFailed(method_path + " is not exist!");
+        return;
+    }
+    int idx = host_data.find(":");
+    if(idx == -1) {
+        controller->SetFailed(method_path + "address is not valid!");
+        return;
+    }
+    std::string ip = host_data.substr(0, idx);
+    uint32_t port = atoi(host_data.substr(idx + 1, host_data.size() - idx).c_str());
+
     // 配置socket参数
     struct sockaddr_in server_addr;  
     server_addr.sin_family = AF_INET;

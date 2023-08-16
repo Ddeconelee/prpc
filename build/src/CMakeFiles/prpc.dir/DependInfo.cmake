@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/decone/prpc/src/prpccontroller.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/prpccontroller.cc.o"
   "/home/decone/prpc/src/rpcheader.pb.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/rpcheader.pb.cc.o"
   "/home/decone/prpc/src/rpcprovider.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/rpcprovider.cc.o"
+  "/home/decone/prpc/src/zookeeperutil.cc" "/home/decone/prpc/build/src/CMakeFiles/prpc.dir/zookeeperutil.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

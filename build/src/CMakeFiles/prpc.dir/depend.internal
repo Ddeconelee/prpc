@@ -17,6 +17,7 @@ src/CMakeFiles/prpc.dir/prpcchannel.cc.o
  ../src/include/prpcconfig.h
  ../src/include/prpccontroller.h
  ../src/include/rpcheader.pb.h
+ ../src/include/zookeeperutil.h
  /home/decone/prpc/src/prpcchannel.cc
 src/CMakeFiles/prpc.dir/prpcconfig.cc.o
  ../src/include/prpcconfig.h
@@ -36,4 +37,12 @@ src/CMakeFiles/prpc.dir/rpcprovider.cc.o
  ../src/include/prpccontroller.h
  ../src/include/rpcheader.pb.h
  ../src/include/rpcprovider.h
+ ../src/include/zookeeperutil.h
  /home/decone/prpc/src/rpcprovider.cc
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.o
+ ../src/include/prpcapplication.h
+ ../src/include/prpcchannel.h
+ ../src/include/prpcconfig.h
+ ../src/include/prpccontroller.h
+ ../src/include/zookeeperutil.h
+ /home/decone/prpc/src/zookeeperutil.cc

@@ -35,6 +35,11 @@
   "file": "/home/decone/prpc/src/logger.cc"
 },
 {
+  "directory": "/home/decone/prpc/build/src",
+  "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/prpc.dir/zookeeperutil.cc.o -c /home/decone/prpc/src/zookeeperutil.cc",
+  "file": "/home/decone/prpc/src/zookeeperutil.cc"
+},
+{
   "directory": "/home/decone/prpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/decone/prpc/src/include -I/home/decone/prpc/example  -g   -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/decone/prpc/example/callee/friendservice.cc",
   "file": "/home/decone/prpc/example/callee/friendservice.cc"

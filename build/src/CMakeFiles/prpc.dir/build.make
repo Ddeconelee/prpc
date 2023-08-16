@@ -225,6 +225,30 @@ src/CMakeFiles/prpc.dir/logger.cc.o.provides: src/CMakeFiles/prpc.dir/logger.cc.
 src/CMakeFiles/prpc.dir/logger.cc.o.provides.build: src/CMakeFiles/prpc.dir/logger.cc.o
 
 
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.o: src/CMakeFiles/prpc.dir/flags.make
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/prpc.dir/zookeeperutil.cc.o"
+	cd /home/decone/prpc/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/prpc.dir/zookeeperutil.cc.o -c /home/decone/prpc/src/zookeeperutil.cc
+
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prpc.dir/zookeeperutil.cc.i"
+	cd /home/decone/prpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decone/prpc/src/zookeeperutil.cc > CMakeFiles/prpc.dir/zookeeperutil.cc.i
+
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prpc.dir/zookeeperutil.cc.s"
+	cd /home/decone/prpc/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decone/prpc/src/zookeeperutil.cc -o CMakeFiles/prpc.dir/zookeeperutil.cc.s
+
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.requires:
+
+.PHONY : src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.requires
+
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.provides: src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/prpc.dir/build.make src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.provides.build
+.PHONY : src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.provides
+
+src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.provides.build: src/CMakeFiles/prpc.dir/zookeeperutil.cc.o
+
+
 # Object files for target prpc
 prpc_OBJECTS = \
 "CMakeFiles/prpc.dir/prpcapplication.cc.o" \
@@ -233,7 +257,8 @@ prpc_OBJECTS = \
 "CMakeFiles/prpc.dir/rpcprovider.cc.o" \
 "CMakeFiles/prpc.dir/prpcchannel.cc.o" \
 "CMakeFiles/prpc.dir/prpccontroller.cc.o" \
-"CMakeFiles/prpc.dir/logger.cc.o"
+"CMakeFiles/prpc.dir/logger.cc.o" \
+"CMakeFiles/prpc.dir/zookeeperutil.cc.o"
 
 # External object files for target prpc
 prpc_EXTERNAL_OBJECTS =
@@ -245,9 +270,10 @@ prpc_EXTERNAL_OBJECTS =
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/prpcchannel.cc.o
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/prpccontroller.cc.o
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/logger.cc.o
+../lib/libprpc.a: src/CMakeFiles/prpc.dir/zookeeperutil.cc.o
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/build.make
 ../lib/libprpc.a: src/CMakeFiles/prpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libprpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/decone/prpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ../../lib/libprpc.a"
 	cd /home/decone/prpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/prpc.dir/cmake_clean_target.cmake
 	cd /home/decone/prpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prpc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -263,6 +289,7 @@ src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/rpcprovider.cc.o.requi
 src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/prpcchannel.cc.o.requires
 src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/prpccontroller.cc.o.requires
 src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/logger.cc.o.requires
+src/CMakeFiles/prpc.dir/requires: src/CMakeFiles/prpc.dir/zookeeperutil.cc.o.requires
 
 .PHONY : src/CMakeFiles/prpc.dir/requires
 
